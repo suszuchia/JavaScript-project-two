@@ -37,9 +37,7 @@ body {
   gap: 10px;
 }
 
-.converter-form input,
-.converter-form select,
-.converter-form button {
+.form-field {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -52,8 +50,10 @@ body {
   border: none;
 }
 
-.convert-button:hover {
-  background-color: #0056b3;
+@media (hover: hover) {
+  .convert-button:hover {
+    background-color: #0056b3;
+  }
 }
 
 .result {
