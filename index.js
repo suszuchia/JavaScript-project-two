@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    loader.style.display = "block";
+    loader.classList.remove("hidden");
     resultDiv.textContent = "";
 
     try {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       resultDiv.textContent = "Error fetching exchange rate";
     } finally {
-      loader.style.display = "none";
+      loader.classList.add("hidden");
     }
   });
 });
